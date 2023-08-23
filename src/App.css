@@ -16,17 +16,10 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1em;
-  will-change: filter;
-  transition: filter 300ms;
+  max-width: 100%;
+  height: 40px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 a {
   text-decoration: none;
@@ -49,6 +42,16 @@ button{
 .input-group button{
   background: transparent;
   font-size: 14px;
+}
+
+.header-upper{
+  background: var(--lighter2);
+}
+
+.nav-links a{
+  font-size: 16px;
+  text-transform:uppercase;
+  color: var(--primary1);
 }
 
 /* Header end */
