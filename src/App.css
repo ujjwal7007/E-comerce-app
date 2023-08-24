@@ -38,6 +38,16 @@ button{
   color: white;
 }
 
+.active{
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.inactive{
+  color: var(--primary1);
+  font-weight: 400;
+}
+
 /* Header starts */
 .header-top-strip a{
   color: var(--primary1);
@@ -56,17 +66,16 @@ button{
 .nav-links a{
   font-size: 16px;
   text-transform:uppercase;
-  color: var(--primary1);
+  text-decoration: none;
 }
 
-.nva-links-nav a{
+/* .nva-links-nav a{
   color: var(--search);
-}
+} */
 
 .social-icons a{
   color: var(--search);
 }
-
 /* Header ends */
 
 /* footer starts */
