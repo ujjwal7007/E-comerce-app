@@ -4,6 +4,8 @@ import {AiFillTwitterCircle} from "react-icons/ai"
 import {BsFacebook, BsInstagram, BsLinkedin} from "react-icons/bs"
 import google from "../assets/images/pay/play.jpg"
 import  app from "../assets/images/pay/app.jpg"
+import pay from "../assets/images/pay/pay.png"
+
 const footer = () => {
   return (
     <>
@@ -28,19 +30,19 @@ const footer = () => {
           <div className="col-2">
             <h3 className="mb-4">About</h3>
             <div className="footer-details d-flex flex-column">
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 About Us
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Delivery
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Privacy Policy
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Terms & Conditions
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Fee Policy
               </Link>
             </div>
@@ -48,22 +50,22 @@ const footer = () => {
           <div className="col-2">
             <h3 className="mb-4">Account</h3>
             <div className="footer-details d-flex flex-column">
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Profile
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 View Cart
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Help
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Payments
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 My Wishlist
               </Link>
-              <Link className='mb-3 text-black'>
+              <Link className='mb-3'>
                 Coupons
               </Link>
             </div>
@@ -74,12 +76,16 @@ const footer = () => {
               <p>Available On Google Play Services & App Store</p>
               <div className='pay'>
                 <Link>
-                  <img src={google} alt='' className='img-fluid p-4 my-3'/>
+                  <img src={google} alt='' className='img-fluid p-3 my-3'/>
                 </Link>
                 <Link>
-                  <img src={app} alt='' className='img-fluid p-4 my-3'/>  
+                  <img src={app} alt='' className='img-fluid p-3 my-3'/>  
                 </Link>
               </div>
+              <p className='mb-3'>Payment Methods</p>
+              <Link className='pay'>
+                <img src={pay} alt='' className='img-fluid p-3'/>  
+              </Link>
             </div>
           </div>
         </div>

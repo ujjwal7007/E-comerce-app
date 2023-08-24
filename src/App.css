@@ -75,7 +75,11 @@ footer {
 }
 
 .pay img:hover{
-  transform: translate(-10px);
+  transform: translateY(-8px);
+}
+
+.footer-details a{
+  color: var(--primary1);
 }
 
 /* footer ends */
