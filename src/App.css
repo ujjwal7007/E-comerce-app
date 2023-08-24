@@ -60,3 +60,9 @@ button{
 }
 
 /* Header end */
+
+/* footer start */
+footer {
+  background-color: var(--lighter2);
+}
+/* footer end */
