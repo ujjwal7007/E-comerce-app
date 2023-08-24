@@ -7,10 +7,11 @@ import {HiOutlineInboxIn} from "react-icons/hi"
 import {VscAccount} from "react-icons/vsc"
 import {CgShoppingCart} from "react-icons/cg"
 
+
 const header = () => {
   return (
     <>
-    <header className='header-top-strip p-1 shadow-sm'>
+    <header className='header-top-strip p-1 px-4 shadow-md'>
       <div className='container-xxl'>
         <div className='row align-items-center'>
           <div className='col-6'>
@@ -29,7 +30,7 @@ const header = () => {
       </div>
     </header>
 
-    <header className='header-upper'>
+    <header className='header-upper px-3'>
       <div className="container-xxl">
         <div className='row'>
           <div className="col-2 m-auto text-center">
@@ -49,14 +50,14 @@ const header = () => {
             <Link to={'about'}>About</Link>
             <Link to={'content'}>Content</Link>
           </div>
-          <div className="col-3 d-flex align-items-center justify-content-around">
-            <Link className='d-flex'><HiOutlineInboxIn className='fs-3 mx-2'/>
+          <div className="nva-links-nav col-3 d-flex align-items-center justify-content-around">
+            <Link to={"wishlist"} className='d-flex'><HiOutlineInboxIn className='fs-3 mx-2'/>
              <p>Wishlist</p>
             </Link>
-            <Link className='d-flex'><VscAccount className='fs-3 mx-2'/>
+            <Link to={"login"} className='d-flex'><VscAccount className='fs-3 mx-2'/>
              <p>Account</p>
             </Link>
-            <Link className='d-flex'><CgShoppingCart className='fs-3 mx-2'/>
+            <Link to={"cart"} className='d-flex'><CgShoppingCart className='fs-3 mx-2'/>
              <p>Cart</p>
             </Link>
           </div>
