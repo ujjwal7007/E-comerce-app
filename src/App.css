@@ -38,7 +38,7 @@ button{
   color: white;
 }
 
-/* Header start */
+/* Header starts */
 .input-group button{
   background: transparent;
   font-size: 14px;
@@ -55,14 +55,15 @@ button{
   color: var(--primary1);
 }
 
-.nva-links-nav a{
+.nva-links-nav, .social-icons a{
   color: var(--search);
 }
 
-/* Header end */
+/* Header ends */
 
-/* footer start */
+/* footer starts */
 footer {
   background-color: var(--lighter2);
 }
-/* footer end */
+
+/* footer ends */
