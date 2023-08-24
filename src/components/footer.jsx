@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {AiFillTwitterCircle} from "react-icons/ai"
 import {BsFacebook, BsInstagram, BsLinkedin} from "react-icons/bs"
 import google from "../assets/images/pay/play.jpg"
-
+import  app from "../assets/images/pay/app.jpg"
 const footer = () => {
   return (
     <>
@@ -72,9 +72,15 @@ const footer = () => {
             <h3 className='mb-3'>Install App</h3>
             <div className="footer-details">
               <p>Available On Google Play Services & App Store</p>
-              <img src={google} alt='' className='img-fluid p-4' />
+              <div className='pay'>
+                <Link>
+                  <img src={google} alt='' className='img-fluid p-4 my-3'/>
+                </Link>
+                <Link>
+                  <img src={app} alt='' className='img-fluid p-4 my-3'/>  
+                </Link>
+              </div>
             </div>
-
           </div>
         </div>
         <hr/>
