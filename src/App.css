@@ -55,7 +55,11 @@ button{
   color: var(--primary1);
 }
 
-.nva-links-nav, .social-icons a{
+.nva-links-nav a{
+  color: var(--search);
+}
+
+.social-icons a{
   color: var(--search);
 }
 
