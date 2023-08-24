@@ -39,6 +39,10 @@ button{
 }
 
 /* Header starts */
+.header-top-strip a{
+  color: var(--primary1);
+}
+
 .input-group button{
   background: transparent;
   font-size: 14px;
