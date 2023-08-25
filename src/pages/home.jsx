@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const home = () => {
   return (
@@ -9,6 +10,9 @@ const home = () => {
           <div className="banner-details d-flex flex-column align-items-center justify-content-center">
             <span className='shadow-lg p-3 text-white'>Trade in offer!!</span>
             <h1>Super Value Deals</h1>
+            <h2>On all products</h2>
+            <p>Save more with Apneck</p>
+            <Link className='button-link mb-3'>Shop Now</Link>
           </div>
         </div>
       </div>

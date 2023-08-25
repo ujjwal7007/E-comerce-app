@@ -38,11 +38,25 @@ h1{
   font-size: 40px;
 }
 
+h2{
+  font-weight: 400;
+  color: var(--primary1);
+  font-size: 32px;
+}
+
 button{
   padding: 12px 10px;
   font-size: 14px;
   background-color: var(--primary1);
   color: white;
+}
+
+.button-link{
+  padding: 12px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  background: var(--primary);
 }
 
 .active{
