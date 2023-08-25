@@ -31,6 +31,13 @@ p{
   margin: auto;
 }
 
+h1{
+  font-weight: 600;
+  color: var(--search);
+  margin: 10px;
+  font-size: 40px;
+}
+
 button{
   padding: 12px 10px;
   font-size: 14px;
