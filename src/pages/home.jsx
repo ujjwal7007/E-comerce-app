@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 const home = () => {
   return (
     <>
-    <section className='banner p-5'>
+    <section className='banner'>
       <div className="container-xxl">
         <div className="row">
-          <div className="banner-details d-flex flex-column align-items-center justify-content-center">
+          <div className="banner-details p-5 d-flex flex-column align-items-start justify-content-center">
             <span className='shadow-lg p-3 text-white'>Trade in offer!!</span>
             <h1>Super Value Deals</h1>
             <h2>On all products</h2>
-            <p>Save more with Apneck</p>
+            <p>Save more with Upneck</p>
             <Link className='button-link mb-3'>Shop Now</Link>
           </div>
         </div>
