@@ -94,5 +94,14 @@ footer {
 .footer-details a{
   color: var(--primary1);
 }
-
 /* footer ends */
+
+/* Home begins */
+.banner-details {
+  background: url(./assets/images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+/* Home ends */
