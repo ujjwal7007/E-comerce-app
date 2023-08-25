@@ -31,7 +31,7 @@ const home = () => {
               <h1>Our Featured Products</h1>
               <p>All Weather Modern Designs</p>
             </div>
-            <FeaturedProducts/>
+            <FeaturedProducts />
           </div>
         </div>
       </section>
