@@ -2,7 +2,7 @@ import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/images/shop.png";
+import logo from "../assets/images/shop2.jpg";
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
