@@ -4,18 +4,24 @@ import { PRODUCTS } from "./products";
 const featuredProducts = () => {
   return (
     <>
-      <div className="row">
+      <div className="row mt-4">
         {PRODUCTS.slice(2, 6).map((product) => (
-          <div key={product.id}>
-            <div className="col mb-5">
-              <div className="card">
-                <img src={product.image} alt="" className="img-fluid" />
+          <div className="col-3 p-3">
+            <div key={product.id}>
+              <div className="card h-100 m-auto p-2">
+                <img
+                  src={product.image}
+                  alt=""
+                  className="card-img-top img-fluid m-auto"
+                />
                 <div className="card-details">
-                  <span>{product.brand}</span>
-                  <h2>{product.name}</h2>
-                  <div className="card-bottom">
-                    <p>{product.status}</p>
-                    <p>{product.rate}</p>
+                  <div className="title mb-2">
+                    <span>{product.brand}</span>
+                    <h4>{product.name}</h4>
+                  </div>
+                  <div className="card-footer text-center">
+                    <p className="mb-3">{product.status}</p>
+                    <p><strike className="text-danger">{product.rate}</strike></p>
                   </div>
                 </div>
               </div>
