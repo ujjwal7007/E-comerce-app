@@ -1,11 +1,11 @@
 import React from "react";
-import { PRODUCTS } from "./products";
+import { PRODUCTS1 } from "./products";
 
-const featuredProducts = () => {
+const newArrival = () => {
   return (
     <>
       <div className="row mt-4">
-        {PRODUCTS.slice(2, 6).map((product) => (
+        {PRODUCTS1.slice(1, 5).map((product) => (
           <div className="col-3 p-3">
             <div key={product.id}>
               <div className="card h-100 m-auto p-2">
@@ -21,7 +21,9 @@ const featuredProducts = () => {
                   </div>
                   <div className="card-footer text-center">
                     <p className="mb-3">{product.status}</p>
-                    <p><strike className="text-danger">{product.rate}</strike></p>
+                    <p>
+                      <strike className="text-danger">{product.rate}</strike>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -33,4 +35,4 @@ const featuredProducts = () => {
   );
 };
 
-export default featuredProducts;
+export default newArrival;

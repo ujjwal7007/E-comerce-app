@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/hero";
 import FeaturedProducts from "../components/featuredProducts";
+import NewArrival from "../components/newArrival"
 
 const home = () => {
   return (
@@ -32,6 +33,38 @@ const home = () => {
               <p>All Weather Modern Designs</p>
             </div>
             <FeaturedProducts />
+          </div>
+        </div>
+      </section>
+
+      <section className="repair">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="repair-details text-center d-flex flex-column align-items-center p-3">
+              <span className="text-white mt-5">Repair Services</span>
+              <h2 className="text-white">
+                On{" "}
+                <span className="text-info">
+                  <b>70%</b>
+                </span>{" "}
+                off on All Products And Accessories
+              </h2>
+              <div className="mt-3">
+                <button className="button-repair">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="new-products p-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center">
+              <h1>New Arrivals</h1>
+              <p>Your Best Designer Outfits</p>
+            </div>
+            <NewArrival />
           </div>
         </div>
       </section>

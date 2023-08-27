@@ -181,7 +181,7 @@ export const  PRODUCTS1 = [
         {
         id: 19,
         image: img4,
-        name: "Men's 1950s Sportswear T-Shirt",
+        name: "Men's 1950s Sportswear",
         price: 49.90,
         brand: 'Levi s',
         status: 'out of stock',
