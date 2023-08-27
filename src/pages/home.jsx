@@ -7,7 +7,7 @@ import NewArrival from "../components/newArrival"
 const home = () => {
   return (
     <>
-      <section className="banner">
+      <section className="banner mb-3">
         <div className="container-xxl">
           <div className="row">
             <div className="banner-details p-5 d-flex flex-column align-items-start justify-content-center">

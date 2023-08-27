@@ -17,7 +17,7 @@ const featuredProducts = () => {
                 <div className="card-details">
                   <div className="title mb-2">
                     <span>{product.brand}</span>
-                    <h5 className="mt-2">{product.name}</h5>
+                    <h6 className="mt-2">{product.name}</h6>
                   </div>
                   <div className="card-footer text-center">
                     <p className="mb-3">{product.status}</p>
