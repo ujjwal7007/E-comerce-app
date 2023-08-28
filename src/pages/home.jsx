@@ -5,6 +5,7 @@ import FeaturedProducts from "../components/featuredProducts";
 import NewArrival from "../components/newArrival";
 import img1 from "../assets/images/banner/b17.jpg";
 import img2 from "../assets/images/banner/b10.jpg";
+import Blogs from "../components/blogs"
 
 const home = () => {
   return (
@@ -74,14 +75,14 @@ const home = () => {
       <section className="deals p-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 p-4">
               <div className="card row">
                 <div className="d-flex">
                   <div className="col-md-4">
                     <img
                       src={img1}
+                      className="img-fluid rounded-start p-2 h-100"
                       alt=""
-                      className="img-fluid rounded-start"
                     />
                   </div>
                   <div className="col-md-8">
@@ -98,14 +99,37 @@ const home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
-              <div className="card">
-                <div className="col-md-4">
-                  <img src={img2} alt="" className="img-fluid rounded-start" />
+            <div className="col-6 p-4">
+              <div className="card row">
+                <div className="d-flex">
+                  <div className="col-md-4">
+                    <img
+                      src={img2}
+                      alt=""
+                      className="img-fluid rounded-start p-2 h-100"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span>Season-In</span>
+                      <h3>All Weather Attire</h3>
+                      <p>
+                        It never matter which season it is <br/>We got you covered 
+                      </p>
+                      <button className="button-deals mt-3">Learn More</button>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-md-8"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blogs p-5">
+        <div className="container-xxl">
+          <div className="row">
+            <Blogs/>
           </div>
         </div>
       </section>
