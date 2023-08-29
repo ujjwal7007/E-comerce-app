@@ -5,18 +5,18 @@ const shop = () => {
     <>
       <section className="shop-banner p-2">
         <div className="container-xxl">
-          <div className="row">
-            <div className="banner-details text-center d-flex flex-column align-items-center p-3">
-              <span className="text-white mt-5">Repair Services</span>
-              <h2 className="text-white">
-                On{" "}
-                <span className="text-info">
-                  <b>70%</b>
-                </span>{" "}
-                off on All Products And Accessories
-              </h2>
-              <div className="mt-3">
-                <button className="button-repair">Explore Now</button>
+          <div className="row justify align-items-center">
+            <div className="repair-details text-center p-5">
+              <div>
+                <h1 className="text-white">
+                  <span className="text-info">
+                    <b>#100%</b>
+                  </span>{" "}
+                  off on All Products
+                </h1>
+              </div>
+              <div>
+                <p className="text-white">Moke your orders we will deliver..</p>
               </div>
             </div>
           </div>
