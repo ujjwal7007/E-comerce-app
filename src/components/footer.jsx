@@ -12,11 +12,32 @@ const footer = () => {
     <footer className='footer p-5'>
       <div className="container-xxl">
         <div className="row">
+          <div className="col-12 d-flex">
+            <div className="col-8 text-center mb-3">
+              <h3>Signup For News-letter</h3>
+              <p>To get updates On All <Link>Special Offers</Link></p>
+            </div>
+            <div className="col-4">
+            <div className="input-group mb-3 text-center">
+                <input
+                  type="text"
+                  className="form-control p-2"
+                  placeholder="Enter Email here"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <button className="input-group-text" id="basic-addon2">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr className='m-3'/>
           <div className='col-4 d-flex flex-column'>
             <h3 className='mb-4'>Contact us</h3>
             <div className="footer-details">
               <p className='mb-3'><b>Address:</b> Ground floor, Mohan Rd, near Tikait Rai Talab, opp. Power House Road, LDA Colony, Rajajipuram, Lucknow, Uttar Pradesh 226003</p>
-              <p className='mb-3'><b>Phone:</b><a href="tel:+9157865438"> Call us +9157865438</a></p>
+              <p className='mb-3'><b>Phone:</b><a href="tel:+91 57865438"> Call us +91 57865438</a></p>
               <p className='mb-3'><b>Hours Open:</b> From 8 A.M to 11 P.M</p>
               <p className='mb-3'><b>Follow us</b></p>
               <div className="col-4 social-icons mb-3 d-flex justify-content-around">

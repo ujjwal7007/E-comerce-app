@@ -19,7 +19,7 @@ const header = () => {
             </div>
             <div className="col-6 d-flex justify-content-between">
               <div>
-                <a href="tel:+9157865438"> Call us +9157865438</a>
+                <a href="tel:+91 57865438"> Call us +91 57865438</a>
               </div>
               <div>
                 <Link>

@@ -5,7 +5,7 @@ import FeaturedProducts from "../components/featuredProducts";
 import NewArrival from "../components/newArrival";
 import img1 from "../assets/images/banner/b17.jpg";
 import img2 from "../assets/images/banner/b10.jpg";
-import Blogs from "../components/blogs"
+import Blogs from "../components/blogs";
 
 const home = () => {
   return (
@@ -114,7 +114,8 @@ const home = () => {
                       <span>Season-In</span>
                       <h3>All Weather Attire</h3>
                       <p>
-                        It never matter which season it is <br/>We got you covered 
+                        It never matter which season it is <br />
+                        We got you covered
                       </p>
                       <button className="button-deals mt-3">Learn More</button>
                     </div>
@@ -126,10 +127,14 @@ const home = () => {
         </div>
       </section>
 
-      <section className="blogs p-5">
+      <section className="blogs p-3 mb-2">
         <div className="container-xxl">
           <div className="row">
-            <Blogs/>
+            <div className="text-center mb-4">
+              <h1 className="mb-3">What our customs says...</h1>
+              <p className="mb-4">Our customers never miss a bit on providing feedback</p>
+            </div>
+            <Blogs />
           </div>
         </div>
       </section>
