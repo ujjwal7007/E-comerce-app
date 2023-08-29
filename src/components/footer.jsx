@@ -37,7 +37,7 @@ const footer = () => {
             <h3 className='mb-4'>Contact us</h3>
             <div className="footer-details">
               <p className='mb-3'><b>Address:</b> Ground floor, Mohan Rd, near Tikait Rai Talab, opp. Power House Road, LDA Colony, Rajajipuram, Lucknow, Uttar Pradesh 226003</p>
-              <p className='mb-3'><b>Phone:</b><a href="tel:+91 57865438"> Call us +91 57865438</a></p>
+              <p className='mb-3'><b>Phone:</b><a href="tel:+91 5786543897"> Call us +91 5786543897</a></p>
               <p className='mb-3'><b>Hours Open:</b> From 8 A.M to 11 P.M</p>
               <p className='mb-3'><b>Follow us</b></p>
               <div className="col-4 social-icons mb-3 d-flex justify-content-around">
