@@ -3,10 +3,10 @@ import React from "react";
 const shop = () => {
   return (
     <>
-      <section className="repair">
+      <section className="shop-banner p-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="repair-details text-center d-flex flex-column align-items-center p-3">
+            <div className="banner-details text-center d-flex flex-column align-items-center p-3">
               <span className="text-white mt-5">Repair Services</span>
               <h2 className="text-white">
                 On{" "}

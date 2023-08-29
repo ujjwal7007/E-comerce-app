@@ -40,7 +40,7 @@ const home = () => {
         </div>
       </section>
 
-      <section className="repair">
+      <section className="repair p-2">
         <div className="container-xxl">
           <div className="row">
             <div className="repair-details text-center d-flex flex-column align-items-center p-3">
