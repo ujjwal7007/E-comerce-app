@@ -1,4 +1,5 @@
 import React from "react";
+import Shopitems from "../components/shopitems";
 
 const shop = () => {
   return (
@@ -19,6 +20,14 @@ const shop = () => {
                 <p className="text-white">Moke your orders we will deliver..</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shop-products">
+        <div className="container-xxl">
+          <div className="row">
+            <Shopitems/>
           </div>
         </div>
       </section>

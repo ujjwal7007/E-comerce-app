@@ -9,8 +9,7 @@ import Content from "./pages/content";
 import Cart from "./pages/cart";
 import Login from "./pages/login";
 import Wishlist from "./pages/wishlist";
-
-import { ShopContext } from "./components/shopcontext";
+import ShopContext from "./components/shopcontext";
 
 function App() {
   return (
