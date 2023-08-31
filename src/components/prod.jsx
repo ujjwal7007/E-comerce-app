@@ -1,5 +1,6 @@
 import React from "react";
 import { ShopContext } from "./shopcontext";
+import ReactStars from "react-rating-stars-component";
 
 const prod = (props) => {
   const { id, name, image, price, brand } = props.data;
@@ -7,10 +8,18 @@ const prod = (props) => {
     <>
       <div key={id} className="col-3">
         <div className="card">
-          <img src={image} alt="" className="img-fluid card-img-top"/>
+          <img src={image} alt="" className="img-fluid card-img-top" />
           <div className="card-details p-3">
             <span>{brand}</span>
             <h5 className="my-3">{name}</h5>
+            <ReactStars
+              count={5}
+              edit={false}
+              value={4}
+              size={24}
+              activeColor="#cca27e"
+            />
+            <p className="price">{price} <span className="text-danger">&nbsp;<strike>{price * 2}</strike></span></p>
           </div>
         </div>
       </div>
