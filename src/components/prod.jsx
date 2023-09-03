@@ -9,8 +9,8 @@ const prod = (props) => {
   const cartItemCount = cartItems[id];
   return (
     <>
-      <div key={id} className="col-3 mb-3">
-        <div className="card mt-2">
+      <div key={id} className="col-3 mb-4">
+        <div className="card">
           <div className="p-2">
             <img src={image} alt="" className="img-fluid card-img-top" />
           </div>
@@ -24,7 +24,7 @@ const prod = (props) => {
               size={24}
               activeColor="#cca27e"
             />
-            <p className="price m-2">
+            <p className="price my-2">
               {price}{" "}
               <span className="text-danger">
                 &nbsp;<strike>{price * 2}</strike>
@@ -40,8 +40,14 @@ const prod = (props) => {
                 </Link>
               </div>
               <div className="col-6 d-flex align-items-center justify-content-around">
-                <button className="add-btn" onClick={() => addToCart(id)}>
-                  Add to Cart {cartItemCount > 0 && `(${cartItemCount})`}
+                <button
+                  className="add-btn"
+                  onClick={() => {
+                    addToCart(id);
+                    event.target.classList.toggle("text-success");
+                  }}
+                >
+                  Add To Cart {cartItemCount > 0 && `(${cartItemCount})`}
                 </button>
               </div>
             </div>

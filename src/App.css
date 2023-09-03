@@ -256,7 +256,7 @@ footer {
 }
 
 .add-btn{
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: var(--primary1);
   border: none;
   padding: 12px 10px;
@@ -275,5 +275,15 @@ footer {
 
 .shop-products .card span{
   color: var(--darken);
+}
+
+.pagination a{
+  padding: 10px;
+  font-size: 16px;
+  color: #FF6000;
+}
+
+.red{
+  color: var(--primary1);
 }
 /* Shop ends */
