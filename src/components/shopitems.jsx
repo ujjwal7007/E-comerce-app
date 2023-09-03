@@ -1,17 +1,17 @@
-import React from 'react'
-import Prod from './prod'
-import { PRODUCTS, PRODUCTS1 } from './products'
+import React from "react";
+import Prod from "./prod";
+import { PRODUCTS, PRODUCTS1 } from "./products";
 
 const shopitems = () => {
   return (
     <>
-    <div className="row">
+      <div className="row">
         {[...PRODUCTS, ...PRODUCTS1].map((product) => (
-            <Prod Key={product.id} data={product}/>
+          <Prod Key={product.id} data={product} />
         ))}
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default shopitems
+export default shopitems;
