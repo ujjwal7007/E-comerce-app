@@ -26,7 +26,9 @@ const cartitems = (props) => {
               <tbody>
                 <tr>
                   <td>
-                    <img src={image} alt="" className="img-fluid" />
+                    <div className="col-3">
+                      <img src={image} alt="" className="img-fluid" />
+                    </div>
                   </td>
                   <td>
                     <p>{brand}</p>
@@ -61,16 +63,16 @@ const cartitems = (props) => {
                     </button>
                   </td>
                   <td>
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Recipient's username"
                         aria-label="Recipient's username"
                         aria-describedby="basic-addon2"
                       />
-                      <span class="input-group-text" id="basic-addon2">
-                        @example.com
+                      <span className="input-group-text" id="basic-addon2">
+                        Search
                       </span>
                     </div>
                   </td>

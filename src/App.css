@@ -287,3 +287,9 @@ footer {
   color: var(--primary1);
 }
 /* Shop ends */
+
+/* Cart Starts */
+input{
+  padding: 12px;
+}
+/* Cart ends */
