@@ -13,24 +13,22 @@ const cartitems = (props) => {
   } = useContext(ShopContext);
   return (
     <>
-      <section className="card-item p-5">
+      <section className="card-item p-4">
         <div className="container-xxl">
           <div key={id} className="row">
             <table>
-              <thead>
-                <th>Product Image</th>
-                <th>Product Details</th>
-                <th>Edit</th>
-                <th>Coupons</th>
+              <thead className="mb-3">
+                <th className="col-3">Product Image</th>
+                <th className="col-3">Product Details</th>
+                <th className="col-3">Edit</th>
+                <th className="col-2">Coupons</th>
               </thead>
-              <tbody>
+              <tbody className="mb-3">
                 <tr>
-                  <td>
-                    <div className="col-3">
-                      <img src={image} alt="" className="img-fluid" />
-                    </div>
+                  <td className="col-3">
+                    <img src={image} alt="" className="img-fluid" />
                   </td>
-                  <td>
+                  <td className="col-3">
                     <p>{brand}</p>
                     <p>{name}</p>
                     <p>{price}</p>
@@ -67,8 +65,8 @@ const cartitems = (props) => {
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Recipient's username"
-                        aria-label="Recipient's username"
+                        placeholder="Apply coupon code.."
+                        aria-label="Apply coupon code"
                         aria-describedby="basic-addon2"
                       />
                       <span className="input-group-text" id="basic-addon2">
