@@ -7,7 +7,7 @@ const cart = () => {
   const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
   return (
     <>
-      <section className="card-item p-4">
+      <section className="card-item p-5">
         <div className="container-xxl">
           <div className="row">
             <table>

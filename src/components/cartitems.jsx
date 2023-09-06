@@ -16,12 +16,14 @@ const cartitems = (props) => {
       <tbody key={id}>
         <tr>
           <td>
-            <img src={image} alt="" className="img-fluid" />
+            <div className="p-2">
+              <img src={image} alt="" className="img-fluid" />
+            </div>
           </td>
           <td>
-            <p>{brand}</p>
-            <p>{name}</p>
-            <p>{price}</p>
+            <p>Product Brand: {brand}</p>
+            <p>Product Name: {name}</p>
+            <p>Product Price: {price}</p>
           </td>
           <td>
             <button
@@ -47,7 +49,7 @@ const cartitems = (props) => {
             </button>
           </td>
           <td>
-            <div className="input-group mb-3">
+            <div className="input-group mr-3">
               <input
                 type="text"
                 className="form-control"
@@ -61,6 +63,7 @@ const cartitems = (props) => {
             </div>
           </td>
         </tr>
+        <div className="mb-3"></div>
       </tbody>
     </>
   );
