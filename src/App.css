@@ -303,7 +303,11 @@ thead{
   font-size: 16px;
 }
 
-tbody{
+.card-item{
   background-color: var(--lighter2);
+}
+
+tbody{
+  background: white;
 }
 /* Cart ends */
