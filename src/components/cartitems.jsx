@@ -21,9 +21,10 @@ const cartitems = (props) => {
             </div>
           </td>
           <td>
-            <p>Product Brand: {brand}</p>
-            <p>Product Name: {name}</p>
-            <p>Product Price: {price}</p>
+            <p>Product Brand: <span className="price">{brand}</span></p>
+            <p>Product Name: <h6 className="price">{name}</h6></p>
+            <p>Product Price: <span className="price">{price}</span></p>
+            <p>Items In Stock: <span className="text-danger">1000</span> </p>
           </td>
           <td>
             <button
@@ -63,7 +64,7 @@ const cartitems = (props) => {
             </div>
           </td>
         </tr>
-        <div className="mb-3"></div>
+        {/* <div className="mb-1"></div> */}
       </tbody>
     </>
   );

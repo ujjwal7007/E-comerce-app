@@ -244,7 +244,7 @@ footer {
 }
 
 .price {
-  color: var(--primary1);
+  color: var(--primary);
 }
 
 .view-button{
@@ -295,7 +295,7 @@ input{
 
 .card-item img{
   max-width: 100%;
-  height: 100px;
+  height: 120px;
   border-radius: 20px;
 }
 
