@@ -28,7 +28,7 @@ const cartitems = (props) => {
           </td>
           <td>
             <button
-              className="add-btn"
+              className="add-btn mx-2"
               onClick={() => {
                 addToCart(id);
               }}
@@ -41,7 +41,7 @@ const cartitems = (props) => {
               onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
             />
             <button
-              className="add-btn"
+              className="add-btn mx-2"
               onClick={() => {
                 removeToCart(id);
               }}

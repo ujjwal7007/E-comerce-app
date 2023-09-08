@@ -291,6 +291,10 @@ footer {
 /* Cart Starts */
 input{
   padding: 12px;
+  width: 50px;
+  color: #FF6000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card-item img{
@@ -309,5 +313,13 @@ thead{
 
 tbody{
   background: white;
+}
+
+.card-item button{
+  background: transparent;
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
 }
 /* Cart ends */
