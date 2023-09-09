@@ -322,4 +322,8 @@ tbody{
   color: black;
   font-size: 14px;
 }
+
+.input-group button{
+  border: 1px solid var(--lighter);
+}
 /* Cart ends */

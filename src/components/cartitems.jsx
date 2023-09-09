@@ -58,13 +58,13 @@ const cartitems = (props) => {
                 aria-label="Apply coupon code"
                 aria-describedby="basic-addon2"
               />
-              <span className="input-group-text" id="basic-addon2">
+              <button className="input-group-text" id="basic-addon2">
                 Search
-              </span>
+              </button>
             </div>
           </td>
         </tr>
-        {/* <div className="mb-1"></div> */}
+        <div className="mb-1"></div>
       </tbody>
     </>
   );

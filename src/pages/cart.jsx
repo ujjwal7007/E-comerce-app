@@ -4,7 +4,8 @@ import Cartitems from "../components/cartitems";
 import { ShopContext } from "../components/shopcontext";
 
 const cart = () => {
-  const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
+  const { getTotalCartAmount, addToCart, cartItems } = useContext(ShopContext);
+  const TotalAmount = getTotalCartAmount();
   return (
     <>
       <section className="card-item p-5">
@@ -17,12 +18,23 @@ const cart = () => {
                 <th className="col-3">Edit</th>
                 <th className="col-2">Coupons</th>
               </thead>
-                {[...PRODUCTS, ...PRODUCTS1].map((product) => {
-                  if (cartItems[product.id] !== 0) {
-                    return <Cartitems Key={product.id} data={product} />;
-                  }
-                })}
+              {[...PRODUCTS, ...PRODUCTS1].map((product) => {
+                if (cartItems[product.id] !== 0) {
+                  return <Cartitems Key={product.id} data={product} />;
+                }
+              })}
             </table>
+          </div>
+        </div>
+        <hr />
+
+        <div className=" mt-4 p-3 cart-total d-flex justify-content-between">
+          <div>
+            <button>Continue Shopping</button>
+          </div>
+          <div>
+            <h3>Total</h3>
+            <p className="price mb-4">$ {TotalAmount}</p>
           </div>
         </div>
       </section>
