@@ -45,7 +45,7 @@ const footer = () => {
                 </p>
                 <p className="mb-3">
                   <b>Phone:</b>
-                  <a href="tel:+91 5786543897"> Call us +91 5786543897</a>
+                  <a href="tel:+91 5786543897">+91 5786543897</a>
                 </p>
                 <p className="mb-3">
                   <b>Hours Open:</b> From 8 A.M to 11 P.M

@@ -2,42 +2,63 @@ import React, { useContext } from "react";
 import { PRODUCTS, PRODUCTS1 } from "../components/products";
 import Cartitems from "../components/cartitems";
 import { ShopContext } from "../components/shopcontext";
+import { Link } from "react-router-dom";
 
 const cart = () => {
-  const { getTotalCartAmount, addToCart, cartItems } = useContext(ShopContext);
+  const { getTotalCartAmount, getTotalCartProducts, ClearCart, cartItems } =
+    useContext(ShopContext);
   const TotalAmount = getTotalCartAmount();
+  const totalProducts = getTotalCartProducts();
   return (
     <>
-      <section className="card-item p-5">
-        <div className="container-xxl">
-          <div className="row">
-            <table>
-              <thead className="my-2">
-                <th className="col-3">Product Image</th>
-                <th className="col-3">Product Details</th>
-                <th className="col-3">Edit</th>
-                <th className="col-2">Coupons</th>
-              </thead>
-              {[...PRODUCTS, ...PRODUCTS1].map((product) => {
-                if (cartItems[product.id] !== 0) {
-                  return <Cartitems Key={product.id} data={product} />;
-                }
-              })}
-            </table>
+      {TotalAmount > 0 ? (
+        <section className="card-item p-5">
+          <div className="container-xxl">
+            <div className="row">
+              <table>
+                <thead className="my-2">
+                  <th className="col-3">Product Image</th>
+                  <th className="col-3">Product Details</th>
+                  <th className="col-3">Edit</th>
+                  <th className="col-2">Coupons</th>
+                </thead>
+                {[...PRODUCTS, ...PRODUCTS1].map((product) => {
+                  if (cartItems[product.id] !== 0) {
+                    return <Cartitems Key={product.id} data={product} />;
+                  }
+                })}
+                <div className="mb-3 text-center p-3">
+                  <Link onClick={() => ClearCart(id)}>Clear cart</Link>
+                </div>
+              </table>
+            </div>
           </div>
-        </div>
-        <hr />
+          <hr />
 
-        <div className=" mt-4 p-3 cart-total d-flex justify-content-between">
-          <div>
-            <button>Continue Shopping</button>
+          <div className=" mt-4 p-3 cart-total d-flex justify-content-between">
+            <div>
+              <button>Continue Shopping</button>
+            </div>
+            <div>
+              <h3>Total</h3>
+              <p>Total Products : {totalProducts}</p>
+              <p className="price mb-4">$ {TotalAmount}</p>
+              <button>Check out</button>
+            </div>
           </div>
-          <div>
-            <h3>Total</h3>
-            <p className="price mb-4">$ {TotalAmount}</p>
+        </section>
+      ) : (
+        <section className="p-3">
+          <div className="container-xxl">
+            <div className="orw">
+              <div className="text-center">
+                <h3>Your Cart Is Empty</h3>
+                <p>Click here to <Link to={"/shop"}>add items</Link></p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 };
