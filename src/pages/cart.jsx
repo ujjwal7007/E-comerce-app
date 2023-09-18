@@ -41,7 +41,7 @@ const cart = () => {
             </div>
             <div>
               <h3>Total</h3>
-              <p>Total Products : {totalProducts}</p>
+              <p className="my-2">Total Products: <span className="price">{totalProducts > 0 && `(${totalProducts})`}</span></p>
               <p className="price mb-4">$ {TotalAmount}</p>
               <button>Check out</button>
             </div>

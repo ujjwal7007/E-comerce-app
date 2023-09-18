@@ -32,7 +32,7 @@ const prod = (props) => {
             </p>
             <div className="d-flex align-items-center justify-content-around mb-2">
               <div className="col-6 d-flex align-items-center justify-content-around">
-                <Link
+                <Link to={"/details"}
                   className="view-button"
                   onClick={() => viewProductDetails(id)}
                 >
